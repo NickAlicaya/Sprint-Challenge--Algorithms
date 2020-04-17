@@ -102,11 +102,11 @@ class SortingRobot:
             if compare_item() is :
                 swap_item()
     #    algorhithm:
-    #    The robot starts at the left most beginning and compares what its holding with the one infront of it.
+    #    The robot starts at the left most position(beginning) and compares what its holding with the one infront of it.
     #    If the items value is greater then swap with what you are holding. 
     #    Then moves right 1step and compares the item it's holding with the one infront of it.
-    #    if the items value at this position is lower than what you are holding then swap item. Keep moving right doing the same thing with each step.
-    #    then go back to the very beginning again repeating the process and only stopping if it cant find any item whos value is greater than what it is holding while moving right.
+    #    if the items value at this position is lower than what you are holding then swap item. Keep moving right doing the same thing with each step until the end.
+    #    Then go back to the very beginning again repeating the process and only stopping if it cant find any item whos value is greater than what it is holding while moving right.
     #    At this point the item you are holding has the highest value   
 
 
