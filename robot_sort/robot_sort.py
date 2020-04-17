@@ -101,7 +101,15 @@ class SortingRobot:
             move_right()
             if compare_item() is -1:
                 swap_item()
-       
+    #    algorhithm:
+    #    The robot starts at the left most beginning and compares what its holding with the one infront of it.
+    #    If the items value is greater then swap with what you are holding. 
+    #    Then moves right 1step and compares item its holding with the one infront of it.
+    #    if the items value is lower then swap_item then keep moving right doing the same thing with each step.
+    #    then go back to the very beginning again repeating the process and only stopping if it cant find any item whos value is greater than what it is holding while moving right.
+
+
+
 
 
 if __name__ == "__main__":
