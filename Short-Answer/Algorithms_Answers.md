@@ -12,14 +12,11 @@ a)  0(n) The runtime is O(n)  because it is a loop and the run time of depends o
 
 
 
-b) 0(n^2) because it is a nest for loop
-
-logn for everytime J is doubled sum is increased by 1. Hence J is the log of sum
-TO what power(sum) to you raise 2 to get to the value of J
-
-sum is constant 
-loop is 0(n)
-
+b) 0(n Log(n)) 
+Has a constant which is sum
+Loop(i) which is O(n)
+    nested loop(j) which is log(n) its number of iterations is log(n)
+    sum is constant 
 
 
 c) O(n) 
