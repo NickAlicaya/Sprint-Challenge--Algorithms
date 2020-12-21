@@ -97,7 +97,43 @@ class SortingRobot:
         Sort the robot's list.
         """
         # Fill this out
-        pass
+        if self.compare_item() == None:
+            self.swap_item()
+
+        while self._light == 'OFF':
+            if self.can_move_right() == True:
+                self.move_right()
+                if self.compare_item() == -1 or self.compare_item() == None:
+                    self.swap_item()
+            else:
+                if self.can_move_left() == True:
+                    self.move_left()
+                    print(self._position)
+                
+                    
+            
+               
+
+    #    algorhithm:
+    #    While light is off(default)
+    #    The robot starts at the left most position(beginning)picks the first item then moves 1 step to the right it then compares the item infront of it.
+    #    If the items value is greater then swap with what you are holding.
+    #    Keep moving right doing the same thing with each step until the end.
+    #    Then go back to the very beginning again repeating the process and only stopping if it cant find any item whos value is greater    than what it is holding when it reaches the end. 
+    #    (TURN LIGHT ON).
+    #    At this point the item you are holding has the highest value  
+    ################################
+    #   Robot starts at position 0 with lights_on = Off 
+    #   First run compare items once. if self_item == None then swap item
+    #   While light_on = off
+    #       while can_move_right == True:
+    #           move_right()
+    #           if compare_item() == 0 or -1:
+                    # swap_items()
+
+  
+
+
 
 
 if __name__ == "__main__":

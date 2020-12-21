@@ -16,10 +16,13 @@ a)  a = 0
 b)  sum = 0
     for i in range(n):
       j = 1
-      while j < n:
+      while j < n: iteration half of first loop
         j *= 2
         sum += 1
 ```
+  constant=values of sum are logN
+  loop(n) O(n)
+    nested loop(j)
 
 ```
 c)  def bunnyEars(bunnies):
